@@ -1,0 +1,355 @@
+/* =========================================================
+   pedidos.css
+   Carregue depois do login.css e do cardapio.css
+   (reaproveita .cardapio, .filtro, .prato-rodape, .preco e .btn-add).
+   ========================================================= */
+
+
+/* ---- GRID dos pedidos ---- */
+.grade-pedidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.pedido {
+    display: grid;
+    gap: 1rem;
+
+    padding: 1.1rem 1.2rem 1.2rem;
+
+    background-color: #FFFFFF;
+    border-right: 2px solid #F47B20;
+    border-bottom: 2px solid #F47B20;
+    border-radius: 1.1rem;
+
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.03);
+}
+
+
+/* ---- topo do pedido ---- */
+.pedido-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.pedido-topo h2 {
+    font-size: 1.1rem;
+}
+
+.pedido-data {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.selo {
+    flex: none;
+    padding: 0.25rem 0.7rem;
+
+    border-radius: 2rem;
+
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.selo-andamento { background: #FFEBDD; color: #C4570B; }
+.selo-entregue  { background: #E6F2DA; color: #3F7A1A; }
+.selo-cancelado { background: #FBECEA; color: #C0392B; }
+
+
+/* ---- etapas da entrega ---- */
+.etapas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.etapa {
+    position: relative;
+    text-align: center;
+    font-size: 0.72rem;
+    color: #888;
+}
+
+.etapa::before {
+    content: "";
+    position: absolute;
+    top: 0.43rem;
+    left: -50%;
+    width: 100%;
+    height: 2px;
+    background: #E3E3E3;
+}
+
+.etapa:first-child::before {
+    display: none;
+}
+
+.ponto {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0 auto 0.35rem;
+
+    border-radius: 50%;
+    background: #E3E3E3;
+}
+
+.etapa.feita {
+    color: #333;
+}
+
+.etapa.feita::before,
+.etapa.feita .ponto {
+    background: #F47B20;
+}
+
+.etapa.atual {
+    font-weight: bold;
+}
+
+.etapa.atual .ponto {
+    box-shadow: 0 0 0 4px #F47B2040;
+}
+
+
+/* ---- itens e endereço ---- */
+.pedido-itens {
+    list-style: none;
+    display: grid;
+    gap: 0.35rem;
+
+    padding: 0.8rem 0;
+
+    border-top: 1px dashed #D5D5D5;
+    border-bottom: 1px dashed #D5D5D5;
+
+    font-size: 0.9rem;
+}
+
+.pedido-itens li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.pedido-itens li span:last-child {
+    color: #555;
+}
+
+.pedido-endereco {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.pedido .prato-rodape {
+    margin-top: 0;
+}
+
+.total-rotulo {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+a.btn-add {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* ---- sem pedidos ---- */
+.vazio {
+    text-align: center;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.vazio a {
+    color: #F47B20;
+    margin-left: 0.25rem;
+}
+
+.vazio a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---- celulares ---- */
+@media (max-width: 600px) {
+
+    .grade-pedidos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cabecalho {
+    background-color: #FFEFE3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 4%;
+
+    border-top: 4px solid #292321;
+    border-bottom: 2px solid #FFEFE3;
+
+    gap: 20px;
+}
+
+
+/* LOGO */
+
+.logo img {
+    width: 140px;
+    display: block;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.menu a {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ed762b;
+}
+
+
+/* AÇÕES DO CABEÇALHO */
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.icone-carrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* BOTÕES DE LOGIN */
+
+.botoes-login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.botao-entrar {
+    border: 1px solid #292321;
+    border-radius: 20px;
+
+    padding: 12px 20px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-entrar:hover {
+    background-color: #292321;
+    color: white;
+}
+
+.botao-cadastrar {
+    background-color: #ed762b;
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 12px 20px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-cadastrar:hover {
+    background-color: #ce5b1d;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #292321;
+    color: white;
+
+    padding: 35px 6%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-coluna h2 {
+    font-size: 28px;
+}
+
+.rodape-coluna h3 {
+    font-size: 17px;
+}
+
+.rodape-coluna p,
+.rodape-coluna a {
+    font-size: 14px;
+}
+
+.rodape-coluna a:hover {
+    color: #ed762b;
+}
+
+.direitos {
+    grid-column: 1 / -1;
+
+    border-top: 1px solid #51433e;
+
+    padding-top: 20px;
+    margin-top: 10px;
+
+    text-align: center;
+    font-size: 13px;
+}
+

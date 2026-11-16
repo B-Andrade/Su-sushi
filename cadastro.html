@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuSushi - Criar conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastro.css">
+
+</head>
+
+<body class="fundinho">
+
+    <div class="pagina">
+
+       <header class="cabecalho">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" alt="Logo Su'Sushi">
+            </a>
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="menu">
+
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Meus pedidos</a>
+
+        </nav>
+
+        <!-- ÍCONES E BOTÕES -->
+        <div class="acoes">
+
+
+            <div class="botoes-login">
+
+                <a href="login.html" class="botao-entrar">
+                    Entrar
+                </a>
+
+                <a href="cadastro.html" class="botao-cadastrar">
+                    Cadastrar
+                </a>
+
+            </div>
+
+            <a href="carrinho.html" class="icone icone-carrinho">
+                <img src="carrinho.png" alt="Carrinho de compras">
+            </a>
+
+        </div>
+
+    </header>
+
+
+        <main class="conteudo">
+
+            <section class="apresentacao">
+
+                <div class="texto-apresentacao">
+
+                    <h1>
+                        Bem vindo ao<br>
+                        SuSushi!
+                    </h1>
+
+                    <p>
+                        O melhor do sushi, feito com ingredientes
+                        frescos e muito carinho. Peça agora e
+                        receba no conforto da sua casa.
+                    </p>
+
+                </div>
+
+                <div class="imagem-mascote">
+
+                    <img src="download.png"
+                    alt="Mascote SuSushi">
+
+                </div>
+
+            </section>
+
+            <section class="area-login">
+
+                <div class="login-box">
+
+                    <div class="abas">
+
+                        <a href="login.html" class="aba" id="aba-login">
+                            Entrar
+                        </a>
+
+                        <a href="cadastro.html" class="aba ativa" id="aba-cadastro"
+                        aria-current="page">
+                            Criar conta
+                        </a>
+
+                    </div>
+
+                    <div class="formulario" id="form-cadastro">
+
+                        <h2>Crie sua conta</h2>
+
+                        <p>
+                            Cadastre-se para aproveitar todas as
+                            delícias do nosso cardápio!
+                        </p>
+
+                        <form class="form-cadastro" id="cadastro" novalidate>
+
+                            <div class="campo">
+                                <label for="nome">Nome completo</label>
+                                <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Ex.: Maria Souza"
+                                autocomplete="name"
+                                required>
+                                <small class="erro" id="erro-nome" aria-live="polite"></small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="email">E-mail</label>
+                                <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="voce@email.com"
+                                autocomplete="email"
+                                required>
+                                <small class="erro" id="erro-email" aria-live="polite"></small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="telefone">Telefone com DDD</label>
+                                <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(31) 91234-5678"
+                                autocomplete="tel"
+                                inputmode="numeric"
+                                maxlength="15"
+                                required>
+                                <small class="erro" id="erro-telefone" aria-live="polite"></small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="senha">Senha</label>
+                                <div class="senha-wrap">
+                                    <input
+                                    type="password"
+                                    id="senha"
+                                    name="senha"
+                                    placeholder="Mínimo de 6 caracteres"
+                                    autocomplete="new-password"
+                                    minlength="6"
+                                    required>
+                                    <button type="button" class="btn-olho"
+                                    data-alvo="senha"
+                                    aria-label="Mostrar senha">Mostrar</button>
+                                </div>
+                                <div class="forca" id="forca" data-nivel="0" aria-hidden="true">
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                                <small class="forca-texto" id="forca-texto" aria-live="polite"></small>
+                                <small class="erro" id="erro-senha" aria-live="polite"></small>
+                            </div>
+
+                            <div class="campo">
+                                <label for="confirmar">Confirmar senha</label>
+                                <div class="senha-wrap">
+                                    <input
+                                    type="password"
+                                    id="confirmar"
+                                    name="confirmar"
+                                    placeholder="Repita a senha"
+                                    autocomplete="new-password"
+                                    required>
+                                    <button type="button" class="btn-olho"
+                                    data-alvo="confirmar"
+                                    aria-label="Mostrar confirmação de senha">Mostrar</button>
+                                </div>
+                                <small class="erro" id="erro-confirmar" aria-live="polite"></small>
+                            </div>
+
+                            <div class="campo">
+                                <label class="termos" for="termos">
+                                    <input type="checkbox" id="termos" required>
+                                    <span>
+                                        Li e aceito os
+                                        <a href="termos.html" target="_blank" rel="noopener">termos de uso</a>
+                                        e a
+                                        <a href="privacidade.html" target="_blank" rel="noopener">política de privacidade</a>.
+                                    </span>
+                                </label>
+                                <small class="erro" id="erro-termos" aria-live="polite"></small>
+                            </div>
+
+                            <button type="submit" class="btn-form" id="btn-cadastrar">
+
+                                Criar conta
+
+                            </button>
+
+                        </form>
+
+                        <div class="rodape-form">
+
+                            Já possui uma conta?
+
+                            <a href="login.html">
+
+                                Entrar
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="formulario escondido" id="sucesso" role="status">
+
+                        <h2>Conta criada!</h2>
+
+                        <p>
+                            Tudo certo, <strong id="nome-sucesso"></strong>.
+                            Agora é só escolher seus sushis.
+                        </p>
+
+                        <a href="cardapio.html" class="btn-form">
+                            Ver o cardápio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+    <footer class="rodape">
+
+        <div class="rodape-coluna">
+
+            <h2>su'sushi</h2>
+
+            <p>Sabor que conquista!</p>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Links rápidos</h3>
+
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Meus pedidos</a>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Atendimento</h3>
+
+            <p>Segunda a Domingo</p>
+            <p>11h às 23h</p>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Contato</h3>
+
+            <p>Instagram: @susushi</p>
+            <p>WhatsApp: (00) 00000-0000</p>
+
+        </div>
+
+
+        <div class="direitos">
+
+            <p>© 2026 Su'Sushi - Todos os direitos reservados.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>

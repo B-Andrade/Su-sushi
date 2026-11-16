@@ -1,0 +1,475 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFEFE3;
+    font-family: Arial, sans-serif;
+    color: #292321;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #FFEFE3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 4%;
+
+    border-top: 4px solid #292321;
+    border-bottom: 2px solid #FFEFE3;
+
+    gap: 20px;
+}
+
+
+/* LOGO */
+
+.logo img {
+    width: 140px;
+    display: block;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.menu a {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ed762b;
+}
+
+
+/* AÇÕES DO CABEÇALHO */
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.icone-carrinho img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* BOTÕES DE LOGIN */
+
+.botoes-login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.botao-entrar {
+    border: 1px solid #292321;
+    border-radius: 20px;
+
+    padding: 12px 20px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-entrar:hover {
+    background-color: #292321;
+    color: white;
+}
+
+.botao-cadastrar {
+    background-color: #ed762b;
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 12px 20px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-cadastrar:hover {
+    background-color: #ce5b1d;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.conteudo {
+    padding: 45px 6%;
+    min-height: 520px;
+}
+
+.conteudo h1 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* ÁREA DO CARRINHO */
+
+.area-carrinho {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 35px;
+    align-items: center;
+}
+
+
+/* CARRINHO VAZIO */
+
+.carrinho-vazio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 20px;
+    min-height: 330px;
+}
+
+
+/* IMAGEM DO MASCOTE */
+
+.mascote img {
+    width: 250px;
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/* MENSAGEM DO CARRINHO */
+
+.mensagem {
+    max-width: 350px;
+}
+
+.mensagem h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.mensagem p {
+    font-size: 16px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* BOTÃO DO CARDÁPIO */
+
+.botao-cardapio {
+    display: inline-block;
+
+    background-color: #ed762b;
+    color: white;
+
+    padding: 13px 30px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-cardapio:hover {
+    background-color: #ce5b1d;
+}
+
+
+/* RESUMO DO PEDIDO */
+
+.resumo {
+    background-color: #fff0e4;
+
+    border: 1px solid #ead4c2;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    min-height: 280px;
+}
+
+.resumo h2 {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+/* INFORMAÇÕES DO RESUMO */
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e5cdbb;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+/* TOTAL */
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+.total h3 {
+    font-size: 20px;
+}
+
+.total h3:last-child {
+    color: #ed762b;
+}
+
+
+/* BOTÃO FINALIZAR */
+
+.botao-finalizar {
+    width: 100%;
+
+    padding: 14px;
+    margin-top: 25px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #e6d5c8;
+    color: #a99b91;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: not-allowed;
+}
+
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #292321;
+    color: white;
+
+    padding: 35px 6%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+}
+
+.rodape-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-coluna h2 {
+    font-size: 28px;
+}
+
+.rodape-coluna h3 {
+    font-size: 17px;
+}
+
+.rodape-coluna p,
+.rodape-coluna a {
+    font-size: 14px;
+}
+
+.rodape-coluna a:hover {
+    color: #ed762b;
+}
+
+.direitos {
+    grid-column: 1 / -1;
+
+    border-top: 1px solid #51433e;
+
+    padding-top: 20px;
+    margin-top: 10px;
+
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 1000px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 25px;
+    }
+
+    .acoes {
+        gap: 15px;
+    }
+
+    .area-carrinho {
+        grid-template-columns: 1fr;
+    }
+
+    .resumo {
+        width: 100%;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .acoes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .icone img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .botoes-login {
+        gap: 8px;
+    }
+
+    .botao-entrar,
+    .botao-cadastrar {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .conteudo {
+        padding: 30px 5%;
+    }
+
+    .conteudo h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .carrinho-vazio {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .mascote img {
+        width: 190px;
+    }
+
+    .mensagem h2 {
+        font-size: 22px;
+    }
+
+    .mensagem p {
+        font-size: 14px;
+    }
+
+    .resumo {
+        padding: 20px;
+    }
+
+    .rodape {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .rodape-coluna {
+        align-items: center;
+    }
+
+}

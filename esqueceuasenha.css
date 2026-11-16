@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Story Script", sans-serif;
+}
+
+body {
+    background-color: #FFEDDD;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+
+.card-recuperacao {
+    background-color:#f7e0cc;
+    width: 100%;
+    max-width: 450px;
+    padding: 45px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+
+.logo {
+    margin-bottom: 35px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: #ED7D2E;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #333333;
+}
+
+
+
+.icone {
+    background-color: #fff0f0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 0 auto 25px;
+}
+
+
+.card-recuperacao h2 {
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+
+
+.descricao {
+    color: #777777;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+
+.campo {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #ED7D2E;
+    box-shadow: 0 0 5px rgba(228, 56, 56, 0.2);
+}
+
+.cabecalho {
+    width: 100%;
+    min-height: 5.5rem;
+    padding: 0.75rem 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem 4rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 2.5rem;
+}
+
+.menu a {
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ED7D2E;
+}
+
+.botoes-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.botoes-header button {
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.9rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-entrar {
+    background: transparent;
+    border: 1px solid #333;
+    color: #222;
+}
+
+.btn-cadastrar {
+    background: #F47B20;
+    border: 1px solid #F47B20;
+    color: white;
+}
+
+.btn-entrar:hover,
+.btn-cadastrar:hover {
+    transform: translateY(-2px);
+}
+
+.conteudo {
+    width: 100%;
+    min-height: 575px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    padding: 0 5%;
+}
+
+
+
+.voltar {
+    display: inline-block;
+    margin-top: 25px;
+    color: #ED7D2E;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    color: #e98b48;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .card-recuperacao {
+        padding: 35px 25px;
+    }
+
+    .card-recuperacao h2 {
+        font-size: 22px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+}
+
+
+
+footer {
+    background-color: #3F3F3F;
+    height: 50vh;
+}
+
+footer img {
+    position: absolute;
+    right: 0px;
+}

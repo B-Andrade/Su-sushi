@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuSushi - Cardápio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cardapio.css">
+
+</head>
+
+<body class="fundinho">
+
+    <div class="pagina">
+
+        <header class="cabecalho">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" alt="Logo Su'Sushi">
+            </a>
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="menu">
+
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Meus pedidos</a>
+
+        </nav>
+
+        <!-- ÍCONES E BOTÕES -->
+        <div class="acoes">
+
+
+            <div class="botoes-login">
+
+                <a href="login.html" class="botao-entrar">
+                    Entrar
+                </a>
+
+                <a href="cadastro.html" class="botao-cadastrar">
+                    Cadastrar
+                </a>
+
+            </div>
+
+            <a href="carrinho.html" class="icone icone-carrinho">
+                <img src="carrinho.png" alt="Carrinho de compras">
+            </a>
+
+        </div>
+
+    </header>
+        <main class="cardapio">
+
+            <section class="cardapio-topo">
+
+                <h1>Nosso cardápio</h1>
+
+                <p>
+                    Escolha seus favoritos e receba tudo fresquinho
+                    no conforto da sua casa.
+                </p>
+
+            </section>
+
+            <div class="filtros" role="group" aria-label="Categorias">
+
+                <button type="button" class="filtro ativo" data-filtro="todos">Todos</button>
+                <button type="button" class="filtro" data-filtro="combinados">Combinados</button>
+                <button type="button" class="filtro" data-filtro="pecas">Peças</button>
+                <button type="button" class="filtro" data-filtro="rolls">Rolls</button>
+                <button type="button" class="filtro" data-filtro="quentes">Quentes</button>
+
+            </div>
+
+            <section class="grade-cardapio">
+
+                <article class="prato" data-categoria="combinados">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (7).png" alt="Combinado de sushis" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Combinado Su</h2>
+                        <p>20 peças com nigiris, uramakis e acompanhamentos.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 79,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prato" data-categoria="pecas">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (5).png" alt="Nigiri de salmão" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Nigiri de salmão</h2>
+                        <p>Duas unidades de salmão fresco sobre arroz temperado.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 18,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prato" data-categoria="pecas">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (3).png" alt="Sashimi de salmão" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Sashimi de salmão</h2>
+                        <p>Oito fatias de salmão fresco com rabanete e shissô.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 36,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prato" data-categoria="rolls">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (2).png" alt="Uramaki de salmão" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Uramaki de salmão</h2>
+                        <p>Oito unidades recheadas com salmão e pepino, com gergelim.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 32,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prato" data-categoria="rolls">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (5).png" alt="Temaki de salmão" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Temaki de salmão</h2>
+                        <p>Cone de alga crocante com salmão, atum, pepino e cream cheese.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 27,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prato" data-categoria="quentes">
+                    <div class="prato-img">
+                        <img src="image-removebg-preview (6).png" alt="Hot roll empanado" width="300" height="220" loading="lazy">
+                    </div>
+                    <div class="prato-info">
+                        <h2>Hot roll</h2>
+                        <p>Oito unidades empanadas e fritas, com molho tarê e cebolinha.</p>
+                        <div class="prato-rodape">
+                            <span class="preco">R$ 34,90</span>
+                            <button type="button" class="btn-add">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+    <footer class="rodape">
+
+        <div class="rodape-coluna">
+
+            <h2>su'sushi</h2>
+
+            <p>Sabor que conquista!</p>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Links rápidos</h3>
+
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Meus pedidos</a>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Atendimento</h3>
+
+            <p>Segunda a Domingo</p>
+            <p>11h às 23h</p>
+
+        </div>
+
+
+        <div class="rodape-coluna">
+
+            <h3>Contato</h3>
+
+            <p>Instagram: @susushi</p>
+            <p>WhatsApp: (00) 00000-0000</p>
+
+        </div>
+
+
+        <div class="direitos">
+
+            <p>© 2026 Su'Sushi - Todos os direitos reservados.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
